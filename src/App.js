@@ -40,8 +40,8 @@ function AppListData() {
       <h2 className={styles.test}>Chat app ex whatsap</h2>
       <h2>E-commerce app</h2>
       <h2>Blog app</h2>
-      <h2>to do app</h2>
-      <h2>flashcard for learning</h2>
+      <h2>To do app</h2>
+      <h2>Flashcard for learning</h2>
       <h2>Receipe app</h2>
       <h2>Social media dashboard</h2>
       <h2>Task Management app</h2>
