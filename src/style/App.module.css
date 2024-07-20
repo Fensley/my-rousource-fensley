@@ -1,0 +1,86 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #272b35;
+  color: white;
+}
+.fornav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.imgs {
+  width: 300px;
+}
+.app {
+  box-shadow: rgba(255, 255, 255, 0.27) 0px 0px 0.25em,
+    rgba(255, 255, 255, 0.05) 0px 0.25em 1em;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.appname h2 {
+  border-radius: 5px;
+  transition: all 0.3s;
+  margin: 5px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: rgba(255, 255, 255, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+.appname h2:hover {
+  transition: all 0.3s;
+  background-color: #3d414e;
+}
+/*  */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: monospace;
+  align-items: center;
+}
+nav {
+  background-color: #16181d;
+  color: white;
+  position: fixed;
+  width: 100%;
+  font-family: sans-serif;
+}
+footer {
+  background-color: #272b35;
+  color: white;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .imgs {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 685px) {
+  .app {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav {
+    position: relative;
+  }
+}
