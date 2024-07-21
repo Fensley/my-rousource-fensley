@@ -1,6 +1,6 @@
 import logo from "./image/logo.svg";
 import styles from "./style/App.module.css";
-import "../node_modules/font-awesome/css/font-awesome.min.css";
+import "../node_modules/font-awesome/css/`font-awesome.min.css";
 
 export default function App() {
   return (
