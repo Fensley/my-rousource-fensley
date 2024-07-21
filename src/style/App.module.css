@@ -1,13 +1,48 @@
-.section {
+.sectionlight {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  background-color: #272b35;
-  color: white;
+  background-color: white;
+  .app {
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 0px 0.25em,
+      rgba(114, 104, 104, 0.05) 0px 0.25em 1em;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .appname h2:hover {
+    transition: all 0.3s;
+    background-color: #3d414e;
+    color: white;
+  }
 }
+
+.sectionnwa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+  background-color: #272b35;
+  .app {
+    box-shadow: rgba(255, 255, 255, 0.27) 0px 0px 0.25em,
+      rgba(255, 255, 255, 0.05) 0px 0.25em 1em;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .appname h2:hover {
+    transition: all 0.3s;
+    background-color: #3d414e;
+    color: white;
+  }
+}
+
 .fornav {
   padding: 20px;
   display: flex;
@@ -16,13 +51,13 @@
 .imgs {
   width: 300px;
 }
-.app {
+/* .app {
   box-shadow: rgba(255, 255, 255, 0.27) 0px 0px 0.25em,
     rgba(255, 255, 255, 0.05) 0px 0.25em 1em;
   display: flex;
   justify-content: center;
   padding: 20px;
-}
+} */
 .appname h2 {
   border-radius: 5px;
   transition: all 0.3s;
@@ -36,10 +71,10 @@
     rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
     rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
-.appname h2:hover {
+/* .appname h2:hover {
   transition: all 0.3s;
   background-color: #3d414e;
-}
+} */
 
 .footer {
   display: flex;

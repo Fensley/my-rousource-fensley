@@ -1,31 +1,43 @@
+import { useState } from "react";
 import logo from "./image/logo.svg";
 import styles from "./style/App.module.css";
-import "../node_modules/font-awesome/css/`font-awesome.min.css";
 
 export default function App() {
+  const [dark, setdark] = useState(true);
+
+  function handledarkMode() {
+    setdark(!dark);
+  }
+
   return (
     <>
-      <Navelement />
-      <AppList />
+      <Navelement handledarkMode={handledarkMode} dark={dark} />
+      <AppList dark={dark} />
       <Footer />
     </>
   );
 }
 
-function Navelement() {
+function Navelement({ dark, handledarkMode }) {
   return (
     <nav>
       <div className={styles.fornav}>
         <p>Fensley.dev </p>
-        <i className="fa-solid fa-moon"></i>
+        <i
+          style={{ fontSize: "20px", cursor: "pointer" }}
+          className={
+            dark ? "fa-solid fa-moon" : "fa-solid fa-circle-half-stroke "
+          }
+          onClick={handledarkMode}
+        ></i>
       </div>
     </nav>
   );
 }
 
-function AppList() {
+function AppList({ dark }) {
   return (
-    <section className={styles.section}>
+    <section className={dark ? styles.sectionnwa : styles.sectionlight}>
       <div className={styles.app}>
         <img alt="react logo" src={logo} className={styles.imgs} />
         <AppListData />
