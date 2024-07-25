@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "./image/logo.svg";
 import styles from "./style/App.module.css";
+import { Route, Routes, Link } from "react-router-dom";
 
 export default function App() {
   const [dark, setdark] = useState(true);
@@ -49,7 +50,7 @@ function AppList({ dark }) {
 function AppListData() {
   return (
     <div className={styles.appname}>
-      <h2 className={styles.test}>Chat app ex whatsap</h2>
+      <h2 className={styles.test}>Chat app ex whatsap </h2>
       <h2>E-commerce app</h2>
       <h2>Blog app</h2>
       <h2>To do app</h2>
