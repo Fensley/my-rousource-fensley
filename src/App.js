@@ -8,7 +8,6 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Box />} />
-
       <Route path="/testing" element={<BankApp />} />
     </Routes>
   );
