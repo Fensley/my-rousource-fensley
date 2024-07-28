@@ -1,9 +1,20 @@
 import { useState } from "react";
 import logo from "./image/logo.svg";
 import styles from "./style/App.module.css";
+import BankApp from "./pages/bank/banks";
 import { Route, Routes, Link } from "react-router-dom";
 
 export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Box />} />
+
+      <Route path="/testing" element={<BankApp />} />
+    </Routes>
+  );
+}
+
+function Box() {
   const [dark, setdark] = useState(true);
 
   function handledarkMode() {
@@ -50,9 +61,12 @@ function AppList({ dark }) {
 function AppListData() {
   return (
     <div className={styles.appname}>
+      <h2>
+        <Link to={"/testing"}>FensBank</Link>
+      </h2>
+      <h2>Blog app</h2>
       <h2 className={styles.test}>Chat app ex whatsap </h2>
       <h2>E-commerce app</h2>
-      <h2>Blog app</h2>
       <h2>To do app</h2>
       <h2>Flashcard for learning</h2>
       <h2>Receipe app</h2>
