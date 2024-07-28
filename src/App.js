@@ -31,7 +31,7 @@ function Box() {
 
 function Navelement({ dark, handledarkMode }) {
   return (
-    <nav>
+    <nav className={styles.homeNav}>
       <div className={styles.fornav}>
         <p>Fensley.dev </p>
         <i

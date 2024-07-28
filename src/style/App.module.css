@@ -83,7 +83,7 @@
   font-family: monospace;
   align-items: center;
 }
-nav {
+.homeNav {
   background-color: #16181d;
   color: white;
   position: fixed;
