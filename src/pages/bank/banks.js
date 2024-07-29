@@ -26,6 +26,8 @@ function BankComponent() {
       </div>
       {/*  */}
       <NavLink />
+      <NavBar />
+      <NavAccountType />
     </nav>
   );
 }
@@ -54,6 +56,24 @@ function NavLink() {
           </button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function NavBar() {
+  return <div className={style.navbar}></div>;
+}
+
+function NavAccountType() {
+  return (
+    <div className={style.accountType}>
+      <p>Checking Accounts</p>
+      <p>Saving Accounts</p>
+      <p>Credit Cards</p>
+      <p>Home Loans</p>
+      <p>Student Loans</p>
+      <p>Investing & Wealth Management</p>
+      <p>Financial Education</p>
     </div>
   );
 }
