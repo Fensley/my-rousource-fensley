@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .banknav {
-  padding: 20px 50px;
+  padding: 20px 90px;
   background-color: white;
   font-family: "Fira Sans", sans-serif;
   color: #494747;
@@ -27,6 +27,7 @@
 
 .findbranch p {
   cursor: pointer;
+  color: gray;
   transition: all 0.3s;
   border-bottom: 2px solid transparent;
   &:hover {
@@ -101,4 +102,21 @@
   color: #008555;
   cursor: pointer;
   font-weight: bold;
+}
+/*  */
+
+.SecondConatiner {
+  display: flex;
+  background-color: #f0f0e6;
+  padding: 20px 90px;
+  justify-content: center;
+  align-items: center;
+}
+.SecondConatiner img {
+  height: 40vw;
+  line-height: 62px;
+}
+.secondChild h1 {
+  color: #231f20;
+  font-size: 52px;
 }
