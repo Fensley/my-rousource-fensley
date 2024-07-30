@@ -131,6 +131,19 @@ function ThirdContainer() {
           <h3> Wealth Management</h3>
         </div>
       </div>
+      {/*  */}
+    </div>
+  );
+}
+
+function ThirdCtnImage() {
+  return (
+    <div>
+      <div>
+        {/* 
+        the 3 images list due tomorrow
+         */}
+      </div>
     </div>
   );
 }

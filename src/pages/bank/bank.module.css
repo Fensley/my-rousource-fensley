@@ -87,6 +87,7 @@ body {
   margin: 5px;
 }
 .navitem p {
+  transition: all 0.3s;
   cursor: pointer;
   padding: 15px 5px;
   &:hover {
@@ -165,6 +166,7 @@ body {
 }
 .thirdchild p {
   margin: 20px;
+  font-size: 19px;
 }
 .thirdchild h2 {
   font-family: "Playfair Display", serif;
@@ -174,26 +176,25 @@ body {
 .ThirdContainerIcon {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .iconeOne {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 150px;
-  width: 250px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
   }
 }
 .iconeOne h3 {
   margin-top: 20px;
   font-weight: 500;
-  /* font-family: "Playfair Display", serif; */
 }
 .iconeOne i {
   font-size: 2rem;
