@@ -132,6 +132,7 @@ function ThirdContainer() {
         </div>
       </div>
       {/*  */}
+      <ThirdCtnImage />
     </div>
   );
 }
@@ -140,9 +141,17 @@ function ThirdCtnImage() {
   return (
     <div>
       <div>
-        {/* 
-        the 3 images list due tomorrow
-         */}
+        <img
+          src="https://p1.aprimocdn.net/citizensbank/819a6362-7a75-4b38-8619-b0840159af35/GettyImages-1354968155_feature.jpg"
+          alt="bankpay"
+        />
+        <div>
+          <h3>Earn 1.8% cash back on everything you buy</h3>
+          <p>
+            Yes, everything. That means your earning potential is unlimited.
+          </p>
+          <a href="www.fensleyrene.com">Earn Cash Back</a>
+        </div>
       </div>
     </div>
   );
