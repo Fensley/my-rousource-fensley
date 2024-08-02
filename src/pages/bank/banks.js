@@ -35,6 +35,9 @@ function BankComponent() {
         <ThirdContainer />
         <ThirdCtnImage />
       </section>
+      <section>
+        <FouthContainer />
+      </section>
     </>
   );
 }
@@ -158,8 +161,8 @@ function ThirdCtnImage() {
       <div className={style.listimg}>
         <div className={style.containerlistimg}>
           <img
-            src="https://p1.aprimocdn.net/citizensbank/819a6362-7a75-4b38-8619-b0840159af35/GettyImages-1354968155_feature.jpg"
-            alt="bankpay"
+            src="https://p1.aprimocdn.net/citizensbank/d4feb00e-0f66-4cda-84be-affd00e0fc64/GettyImages%201138450254_Featured%20Grid%20NR.jpg"
+            alt="smiling"
           />
         </div>
         <div className={style.listdata}>
@@ -176,8 +179,8 @@ function ThirdCtnImage() {
       <div className={style.listimg}>
         <div className={style.containerlistimg}>
           <img
-            src="https://p1.aprimocdn.net/citizensbank/819a6362-7a75-4b38-8619-b0840159af35/GettyImages-1354968155_feature.jpg"
-            alt="bankpay"
+            src="https://p1.aprimocdn.net/citizensbank/f641e345-3a67-468f-9682-affd00e6c9d4/GettyImages%201159221046_Feature%20Grid%20R.jpg"
+            alt="happy-family"
           />
         </div>
         <div className={style.listdata}>
@@ -189,6 +192,44 @@ function ThirdCtnImage() {
           </p>
           <a href="www.fensleyrene.com">Earn Cash Back</a>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function FouthContainer() {
+  return (
+    <div className={style.fouthcontainer}>
+      <img
+        src="https://www.citizensbank.com/assets/CB_resources/images/citizens-savings-round-up-feature.webp"
+        alt="saving"
+      />
+      <div className={style.fouthcontainerData}>
+        <h3>Turn your spare change into savings with Rounds Ups</h3>
+        <p>
+          We made savings easier by letting you round up your debit card
+          purchases to the nearest dollar. You can even set additional savings
+          amounts to get to your goals even faster.
+        </p>
+        <div className={style.fouthcontainerDataBTN}>
+          <button className={style.fouthcontainerDataBTNone}>
+            Start Saving
+          </button>
+          <button className={style.fouthcontainerDataBTNtwo}>
+            Additional Saving options
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FiveContainer() {
+  return (
+    <div>
+      <h2>Customer service at your finger tips</h2>
+      <div>
+        <div></div>
       </div>
     </div>
   );
