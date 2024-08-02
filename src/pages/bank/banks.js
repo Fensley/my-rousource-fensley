@@ -33,6 +33,7 @@ function BankComponent() {
       <section>
         <SecondConatiner />
         <ThirdContainer />
+        <ThirdCtnImage />
       </section>
     </>
   );
@@ -132,23 +133,59 @@ function ThirdContainer() {
         </div>
       </div>
       {/*  */}
-      <ThirdCtnImage />
     </div>
   );
 }
 
 function ThirdCtnImage() {
   return (
-    <div>
-      <div>
-        <img
-          src="https://p1.aprimocdn.net/citizensbank/819a6362-7a75-4b38-8619-b0840159af35/GettyImages-1354968155_feature.jpg"
-          alt="bankpay"
-        />
-        <div>
-          <h3>Earn 1.8% cash back on everything you buy</h3>
+    <div className={style.ThirdContainerList}>
+      <div className={style.listimg}>
+        <div className={style.containerlistimg}>
+          <img
+            src="https://p1.aprimocdn.net/citizensbank/819a6362-7a75-4b38-8619-b0840159af35/GettyImages-1354968155_feature.jpg"
+            alt="bankpay"
+          />
+        </div>
+        <div className={style.listdata}>
+          <h3>Earn 1.8% cash back on everything you buy*</h3>
           <p>
             Yes, everything. That means your earning potential is unlimited.
+          </p>
+          <a href="www.fensleyrene.com">Earn Cash Back</a>
+        </div>
+      </div>
+      <div className={style.listimg}>
+        <div className={style.containerlistimg}>
+          <img
+            src="https://p1.aprimocdn.net/citizensbank/819a6362-7a75-4b38-8619-b0840159af35/GettyImages-1354968155_feature.jpg"
+            alt="bankpay"
+          />
+        </div>
+        <div className={style.listdata}>
+          <h3>Pay for College with Multi-Year Approval**</h3>
+          <p>
+            College prep is a lot, but the right college funding can be a lot
+            off your back. Especially if one application could fund every school
+            year.
+          </p>
+          <a href="www.fensleyrene.com">Earn Cash Back</a>
+        </div>
+      </div>
+
+      <div className={style.listimg}>
+        <div className={style.containerlistimg}>
+          <img
+            src="https://p1.aprimocdn.net/citizensbank/819a6362-7a75-4b38-8619-b0840159af35/GettyImages-1354968155_feature.jpg"
+            alt="bankpay"
+          />
+        </div>
+        <div className={style.listdata}>
+          <h3>Money in as little as two weeks</h3>
+          <p>
+            Meet Citizens FastLine®, the simpler, faster way to get a Home
+            Equity Line of Credit. Get your rate with no impact to your credit
+            score.
           </p>
           <a href="www.fensleyrene.com">Earn Cash Back</a>
         </div>
