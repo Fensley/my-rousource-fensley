@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Box />} />
-      <Route path="/testing" element={<BankApp />} />
+      <Route path="/fens-bank" element={<BankApp />} />
     </Routes>
   );
 }
@@ -61,7 +61,7 @@ function AppListData() {
   return (
     <div className={styles.appname}>
       <h2>
-        <Link to={"/testing"}>FensBank</Link>
+        <Link to={"/fens-bank"}>FensBank</Link>
       </h2>
       <h2>Blog app</h2>
       <h2 className={styles.test}>Chat app ex whatsap </h2>
