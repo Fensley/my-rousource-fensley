@@ -209,6 +209,7 @@ body {
   gap: 30px;
   margin: 50px 0;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .listimg {
@@ -295,6 +296,10 @@ body {
 
 .FiveContainer {
   margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 .FiveContainer h2 {
   margin: 35px 0;
@@ -303,11 +308,23 @@ body {
 }
 .fiverctnParent {
   display: flex;
-  gap: 25px;
+  /* gap: 25px; */
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 .FiveContainerData {
+  position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 10px;
+  width: 23%;
+  height: 300px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+  /* min-width: 300px; */
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 20px;
+  }
 }
 .FiveContainerData p {
   max-width: 250px;
@@ -316,9 +333,45 @@ body {
 .FiveContainerData i {
   color: #008555;
   margin: 20px;
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 .FiveContainerData h3 {
   font-size: 23px;
   font-family: "Playfair Display", serif;
+}
+.FiveContainerData a {
+  color: rgb(50, 50, 151);
+  text-decoration: underline;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+}
+/*  */
+
+.bankfooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.bankfooter img {
+  width: 150px;
+}
+.bankfooterData {
+  display: flex;
+  gap: 4rem;
+}
+
+.bankfooterEach h3 {
+  margin-bottom: 15px;
+}
+.bankcareer {
+  margin: 15px 0;
+}
+.footersocial {
+  display: flex;
+  gap: 5px;
+  padding: 5px 30px;
+  &:active {
+    color: red;
+  }
 }

@@ -39,6 +39,8 @@ function BankComponent() {
         <FouthContainer />
         <FiveContainer />
       </section>
+      <Footer />
+      <FooterSocial />
     </>
   );
 }
@@ -233,7 +235,7 @@ function FiveContainer() {
       <div className={style.fiverctnParent}>
         <div className={style.FiveContainerData}>
           <div>
-            <i class="fa-solid fa-mobile"></i>
+            <i className="fa-solid fa-mobile"></i>
             <h3>Mobile and online bank</h3>
             <p>
               Citizens offers digital ways to bank from anywhere. Learn more
@@ -245,40 +247,78 @@ function FiveContainer() {
 
         <div className={style.FiveContainerData}>
           <div>
-            <i class="fa-solid fa-mobile"></i>
-            <h3>Mobile and online bank</h3>
+            <i className="fa-solid fa-headphones"></i>
+            <h3>Contact Us</h3>
             <p>
-              Citizens offers digital ways to bank from anywhere. Learn more
-              below on how to make a mobile check deposit and more on the go.
+              Find the information you need to contact Citizens by phone, chat
+              or in-person.
             </p>
-            <a href="notfound">Login to online banking</a>
+            <a href="notfound">Customer service</a>
           </div>
         </div>
 
         <div className={style.FiveContainerData}>
           <div>
-            <i class="fa-solid fa-mobile"></i>
-            <h3>Mobile and online bank</h3>
+            <i className="fa-solid fa-building-columns"></i>
+            <h3>Find a branch or ATM</h3>
             <p>
-              Citizens offers digital ways to bank from anywhere. Learn more
-              below on how to make a mobile check deposit and more on the go.
+              Use our branch locator to find branch information and ATM
+              locations.
             </p>
-            <a href="notfound">Login to online banking</a>
+            <a href="notfound">Find branch near you</a>
           </div>
         </div>
 
         <div className={style.FiveContainerData}>
           <div>
-            <i class="fa-solid fa-mobile"></i>
-            <h3>Mobile and online bank</h3>
+            <i className="fa-solid fa-person-shelter"></i>
+            <h3>Meet with a banker</h3>
             <p>
-              Citizens offers digital ways to bank from anywhere. Learn more
-              below on how to make a mobile check deposit and more on the go.
+              With a Citizens Checkup®, our bankers can help you focus on what’s
+              important and map out a plan for your future.
             </p>
-            <a href="notfound">Login to online banking</a>
+            <a href="notfound">Schedule an appointment</a>
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className={style.bankfooter}>
+      <img
+        src="https://www.citizensbank.com/assets/CB_resources/images/global/citizens/logo-citizens__horz-green.svg"
+        alt="small-logo"
+      />
+      <div className={style.bankfooterData}>
+        <div className={style.bankfooterEach}>
+          <h3>Company</h3>
+          <p>About Us</p>
+          <p className={style.bankcareer}>career</p>
+          <p>Community</p>
+        </div>
+        <div className={style.bankfooterEach}>
+          <h3>Help</h3>
+          <p>Contact Us</p>
+        </div>
+        <div className={style.bankfooterEach}>
+          <h3>Resources</h3>
+          <p>Branch Locator</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FooterSocial() {
+  return (
+    <div className={style.footersocial}>
+      <p>Code source</p>
+      <a href="https://github.com/Fensley/my-rousource-fensley">
+        <i className="fa-brands fa-github"></i>
+      </a>
     </div>
   );
 }
