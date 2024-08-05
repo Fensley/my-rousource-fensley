@@ -37,7 +37,10 @@ function BankComponent() {
       </section>
       <section>
         <FouthContainer />
+        <FiveContainer />
       </section>
+      <Footer />
+      <FooterSocial />
     </>
   );
 }
@@ -121,17 +124,17 @@ function ThirdContainer() {
         </div>
 
         <div className={style.iconeOne}>
-          <i class="fa-solid fa-piggy-bank"></i>
+          <i className="fa-solid fa-piggy-bank"></i>
           <h3> Saving Accounts</h3>
         </div>
 
         <div className={style.iconeOne}>
-          <i class="fa-regular fa-credit-card"></i>
+          <i className="fa-regular fa-credit-card"></i>
           <h3> Credit Cards</h3>
         </div>
 
         <div className={style.iconeOne}>
-          <i class="fa-solid fa-money-bill-trend-up"></i>
+          <i className="fa-solid fa-money-bill-trend-up"></i>
           <h3> Wealth Management</h3>
         </div>
       </div>
@@ -226,11 +229,96 @@ function FouthContainer() {
 
 function FiveContainer() {
   return (
-    <div>
+    <div className={style.FiveContainer}>
       <h2>Customer service at your finger tips</h2>
-      <div>
-        <div></div>
+
+      <div className={style.fiverctnParent}>
+        <div className={style.FiveContainerData}>
+          <div>
+            <i className="fa-solid fa-mobile"></i>
+            <h3>Mobile and online bank</h3>
+            <p>
+              Citizens offers digital ways to bank from anywhere. Learn more
+              below on how to make a mobile check deposit and more on the go.
+            </p>
+            <a href="notfound">Login to online banking</a>
+          </div>
+        </div>
+
+        <div className={style.FiveContainerData}>
+          <div>
+            <i className="fa-solid fa-headphones"></i>
+            <h3>Contact Us</h3>
+            <p>
+              Find the information you need to contact Citizens by phone, chat
+              or in-person.
+            </p>
+            <a href="notfound">Customer service</a>
+          </div>
+        </div>
+
+        <div className={style.FiveContainerData}>
+          <div>
+            <i className="fa-solid fa-building-columns"></i>
+            <h3>Find a branch or ATM</h3>
+            <p>
+              Use our branch locator to find branch information and ATM
+              locations.
+            </p>
+            <a href="notfound">Find branch near you</a>
+          </div>
+        </div>
+
+        <div className={style.FiveContainerData}>
+          <div>
+            <i className="fa-solid fa-person-shelter"></i>
+            <h3>Meet with a banker</h3>
+            <p>
+              With a Citizens Checkup®, our bankers can help you focus on what’s
+              important and map out a plan for your future.
+            </p>
+            <a href="notfound">Schedule an appointment</a>
+          </div>
+        </div>
       </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className={style.bankfooter}>
+      <img
+        src="https://www.citizensbank.com/assets/CB_resources/images/global/citizens/logo-citizens__horz-green.svg"
+        alt="small-logo"
+      />
+      <div className={style.bankfooterData}>
+        <div className={style.bankfooterEach}>
+          <h3>Company</h3>
+          <p>About Us</p>
+          <p className={style.bankcareer}>career</p>
+          <p>Community</p>
+        </div>
+        <div className={style.bankfooterEach}>
+          <h3>Help</h3>
+          <p>Contact Us</p>
+        </div>
+        <div className={style.bankfooterEach}>
+          <h3>Resources</h3>
+          <p>Branch Locator</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FooterSocial() {
+  return (
+    <div className={style.footersocial}>
+      <p>Code source</p>
+      <a href="https://github.com/Fensley/my-rousource-fensley">
+        <i className="fa-brands fa-github"></i>
+      </a>
     </div>
   );
 }
