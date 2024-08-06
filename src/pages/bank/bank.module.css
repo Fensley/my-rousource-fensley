@@ -299,7 +299,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 .FiveContainer h2 {
   margin: 35px 0;
@@ -310,7 +309,6 @@ body {
   display: flex;
   /* gap: 25px; */
   justify-content: space-between;
-  /* flex-wrap: wrap; */
 }
 .FiveContainerData {
   position: relative;
@@ -321,7 +319,6 @@ body {
   border-radius: 3px;
   transition: all 0.3s;
   cursor: pointer;
-  /* min-width: 300px; */
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 20px;
   }
