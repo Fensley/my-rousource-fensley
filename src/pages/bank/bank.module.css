@@ -159,8 +159,6 @@ body {
 /*  */
 
 .ThirdContainer {
-  /* display: flex;
-  flex-direction: column; */
   text-align: center;
   margin: 30px 0;
 }
@@ -307,7 +305,6 @@ body {
 }
 .fiverctnParent {
   display: flex;
-  /* gap: 25px; */
   justify-content: space-between;
 }
 .FiveContainerData {
