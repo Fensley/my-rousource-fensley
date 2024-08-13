@@ -93,7 +93,7 @@ function NavAccountType() {
 
 function SecondConatiner() {
   return (
-    <div className={style.SecondConatiner}>
+    <div className={style.SecondContainer}>
       <div className={style.secondChild}>
         <h1>You're made of keeping things in check. So are we.</h1>
         <p>Comparing your checking account options has never been so easy.</p>
