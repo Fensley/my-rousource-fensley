@@ -14,21 +14,13 @@ function BankComponent() {
             src="https://www.citizensbank.com/assets/CB_resources/images/global/citizens/logo-citizens__horz-green.svg"
             alt="citizen-logo"
           />
-          <div className={style.branchctn}>
-            <div className={style.findbranch}>
-              <i className="fa-solid fa-location-dot"></i>
-              <p>Find a Branch/ATM</p>
-            </div>
-            <div className={style.findbranch}>
-              <i className="fa-solid fa-headset"></i>
-              <p>Customer Service</p>
-            </div>
+          <Findbranchctn />
+          <div className={style.hideLogin}>
+            <NavMenuClick />
           </div>
         </div>
-        {/*  */}
-        <NavLink />
-        <NavBar />
-        <NavAccountType />
+
+        <NavData />
       </nav>
       <section>
         <SecondConatiner />
@@ -44,7 +36,37 @@ function BankComponent() {
     </>
   );
 }
-
+function NavMenuClick() {
+  return (
+    <div className={style.navmenuClick}>
+      <NavLoginButton />
+      <i className="fa-solid fa-bars" style={{ fontSize: "25px" }}></i>
+    </div>
+  );
+}
+function Findbranchctn() {
+  return (
+    <div className={style.branchctn}>
+      <div className={style.findbranch}>
+        <i className="fa-solid fa-location-dot"></i>
+        <p>Find a Branch/ATM</p>
+      </div>
+      <div className={style.findbranch}>
+        <i className="fa-solid fa-headset"></i>
+        <p>Customer Service</p>
+      </div>
+    </div>
+  );
+}
+function NavData() {
+  return (
+    <div className={style.allnavdata}>
+      <NavLink />
+      <NavBar />
+      <NavAccountType />
+    </div>
+  );
+}
 function NavLink() {
   return (
     <div className={style.Navlink}>
@@ -60,19 +82,19 @@ function NavLink() {
           <i className="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="How can we help you?" />
         </div>
-        <div>
-          <button className={style.loginbtn}>
-            <a href="goog">
-              <i className={`fa-solid fa-unlock-keyhole ${style.falock}`}></i>
-              Log in
-            </a>
-          </button>
-        </div>
+        <NavLoginButton />
       </div>
     </div>
   );
 }
-
+function NavLoginButton() {
+  return (
+    <button className={style.loginbtn}>
+      <i className={`fa-solid fa-unlock-keyhole ${style.falock}`}></i>
+      Log in
+    </button>
+  );
+}
 function NavBar() {
   return <div className={style.navbar}></div>;
 }
