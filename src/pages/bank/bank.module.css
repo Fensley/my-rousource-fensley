@@ -76,12 +76,14 @@ body {
   border-radius: 5px;
 }
 .loginbtn {
-  display: flex;
   padding: 5px 25px;
   border: none;
   background-color: #d93d00;
   color: white;
   font-family: "Fira Sans", sans-serif;
+}
+.hideLogin {
+  display: none;
 }
 .falock {
   margin: 5px;
@@ -108,7 +110,11 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-
+.navmenuClick {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 /*  */
 
 .SecondContainer {
@@ -155,29 +161,7 @@ body {
     transition: all 0.3s;
   }
 }
-@media (max-width: 980px) {
-  .SecondContainer {
-    flex-direction: column-reverse;
-    padding: 0;
-    align-items: normal;
-    /* stop here */
-  }
-  .SecondContainer img {
-    width: 100vw;
-    height: fit-content;
-  }
-  .secondChild h1 {
-    max-width: 600px;
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .secondChild p {
-    font-size: 20px;
-  }
-  .btnctn button {
-    width: 100%;
-  }
-}
+
 /*  */
 
 .ThirdContainer {
@@ -390,5 +374,45 @@ body {
   &:active {
     color: red;
   }
+  /*  */
 }
-/* back to it */
+/* all media query */
+
+@media (max-width: 980px) {
+  /* NAV */
+  .branchctn {
+    display: none;
+  }
+  .allnavdata {
+    display: none;
+  }
+  .hideLogin {
+    display: block;
+  }
+  .banknav {
+    padding: 20px 30px;
+  }
+
+  /*  */
+  .SecondContainer {
+    flex-direction: column-reverse;
+    padding: 0;
+    align-items: normal;
+    /* stop here */
+  }
+  .SecondContainer img {
+    width: 100vw;
+    height: fit-content;
+  }
+  .secondChild h1 {
+    max-width: 600px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .secondChild p {
+    font-size: 20px;
+  }
+  .btnctn button {
+    width: 100%;
+  }
+}
